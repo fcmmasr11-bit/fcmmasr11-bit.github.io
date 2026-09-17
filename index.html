@@ -165,6 +165,24 @@
         .section-header h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; margin-bottom: 12px; }
         .section-header p { color: var(--muted); font-size: 1.1rem; }
 
+        /* نبذة عن عمر فاروق */
+        .about-section { margin: 0 8% 120px 8%; }
+        .about-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            padding: 45px;
+            backdrop-filter: blur(20px);
+        }
+        .about-card p {
+            color: var(--muted);
+            font-size: 1.1rem;
+            line-height: 2;
+            margin-bottom: 18px;
+        }
+        .about-card p:last-child { margin-bottom: 0; }
+        .about-card strong { color: #fff; }
+
         /* مشغل الفيديو */
         .cinema-section { margin: 0 8% 120px 8%; }
         .cinema-card { 
@@ -180,6 +198,24 @@
         .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
         .cinema-info { padding: 40px; display: flex; flex-direction: column; justify-content: center; }
         .cinema-info h3 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 900; margin: 15px 0; }
+
+        /* شبكة فيديوهات إضافية */
+        .more-videos-section { margin: 0 8% 120px 8%; }
+        .videos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .video-card-small {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 22px;
+            overflow: hidden;
+            backdrop-filter: blur(20px);
+            transition: 0.3s ease;
+        }
+        .video-card-small:hover { border-color: var(--primary); transform: translateY(-6px); }
+        .video-card-small .video-container { padding-bottom: 56.25%; }
 
         /* شبكة التواصل الاجتماعي */
         .social-universe { margin: 0 8% 120px 8%; }
@@ -283,6 +319,7 @@
         <a href="#" class="logo">OMAR <span>FAROOQ</span></a>
         <ul class="nav-links">
             <li><a href="#hero">الرئيسية</a></li>
+            <li><a href="#about">عن عمر</a></li>
             <li><a href="#featured">الفيديو</a></li>
             <li><a href="#social">المنصات</a></li>
             <li><a href="#business">للإعلان</a></li>
@@ -294,6 +331,19 @@
         <h1>#عمر_<span>يجرب</span></h1>
         <p>نكسر حدود المألوف لنعكس الحقيقة من قلب الحدث. انضم إلى عالم المغامرة والاستكشاف بدون حدود.</p>
         <a href="#featured" class="btn-epic"><i class="fa-solid fa-play"></i> شاهد فيديو تشاد</a>
+    </section>
+
+    <!-- نبذة عن عمر فاروق -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <h2>عن #عمر_يجرب 🧭</h2>
+            <p>رحلة من البحرين إلى قلب العالم</p>
+        </div>
+        <div class="about-card">
+            <p>بدأ <strong>عمر فاروق</strong> رحلته صانعًا لمحتوى المغامرة والسفر، ليتحول برنامجه <strong>#عمر_يجرب</strong> إلى واحدة من أبرز التجارب العربية في هذا المجال، جامعًا بين الإثارة والتوثيق الإنساني الصادق للأماكن والناس.</p>
+            <p>على عكس محتوى السفر التقليدي، يذهب عمر إلى حيث لا تصل الكاميرا عادة: أعماق الأدغال، القبائل النائية، والمهرجانات المحلية التي لا يعرفها معظم الناس، ليعيش التجربة بنفسه قبل أن ينقلها لجمهوره.</p>
+            <p>يقف خلف هذا المحتوى استوديو <strong>أتنفّس للإنتاج الإبداعي</strong>، الذي أنتج مواد إعلامية بالتعاون مع علامات تجارية وجهات إقليمية ودولية مرتبطة بالسفر والقصص القصيرة.</p>
+        </div>
     </section>
 
     <!-- مشغل الفيديو -->
@@ -309,6 +359,31 @@
             <div class="cinema-info">
                 <h3>معايشة مهرجان "الجيرول" في غابات تشاد</h3>
                 <p style="color: var(--muted); line-height: 1.7;">سفرية امتدت لساعات في الأدغال والانعطاف التام عن التكنولوجيا لخوض تجربة فريدة مع قبائل الفلاتة والمبررة.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- فيديوهات إضافية -->
+    <section class="more-videos-section">
+        <div class="section-header">
+            <h2>المزيد من التجارب 🎥</h2>
+            <p>مقتطفات من رحلات ومغامرات سابقة</p>
+        </div>
+        <div class="videos-grid">
+            <div class="video-card-small">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/IzSzEglLAcI" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card-small">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/A7IAreQ4ZsI" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="video-card-small">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/SZ4H1NJQihk" title="YouTube video player" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -434,4 +509,4 @@
         }
     </script>
 </body>
-  </html>
+</html>
